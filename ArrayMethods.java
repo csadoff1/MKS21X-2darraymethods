@@ -15,7 +15,7 @@ public class ArrayMethods {
     return sum;
   }
 
-  public static int[] allRowSum(int[][] ary) {
+  public static int[] allRowSums(int[][] ary) {
     int[] newAry = new int[ary.length];
     for (int i=0; i<newAry.length; i++) {
       newAry[i] = rowSum(ary, i);
@@ -23,7 +23,7 @@ public class ArrayMethods {
     return newAry;
   }
 
-  public static int[] allColSum(int[][] ary) {
+  public static int[] allColSums(int[][] ary) {
     int longest=0;
     for (int i=1; i<ary.length; i++) {
       if (ary[i].length>ary[i-1].length) longest=i;
