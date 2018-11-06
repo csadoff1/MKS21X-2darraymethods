@@ -22,7 +22,9 @@ public class ArrayMethods {
 
   public static int[] allRowsSum(int[][] ary) {
     int[] newAry = new int[ary.length];
-
+    for (int i=0; i<newAry.length; i++) {
+      newAry[i] = rowSum(ary, i);
+    }
     return newAry;
   }
 
