@@ -15,10 +15,18 @@ public class ArrayMethods {
     return sum;
   }
 
-  public static int[] allRowsSum(int[][] ary) {
+  public static int[] allRowSum(int[][] ary) {
     int[] newAry = new int[ary.length];
     for (int i=0; i<newAry.length; i++) {
       newAry[i] = rowSum(ary, i);
+    }
+    return newAry;
+  }
+
+  public static int[] allColSum(int[][] ary) {
+    int[] newAry = new int[ary.length];
+    for (int i=0; i<newAry.length; i++) {
+      newAry[i] = columnSum(ary, i);
     }
     return newAry;
   }
