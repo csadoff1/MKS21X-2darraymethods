@@ -36,9 +36,16 @@ public class ArrayMethods {
   }
 
   public static boolean isRowMagic(int[][] ary) {
+    boolean magic = false;
     for (int i=1; i<ary.length; i++) {
-      if (rowSum(ary, i)==rowSum(ary, i-1)) {}
+      if (rowSum(ary, i)==rowSum(ary, i-1)) {
+        magic=true;
+      }
+      else {
+        magic=false;
+      }
     }
+    return magic;
   }
 
 }
