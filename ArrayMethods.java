@@ -48,4 +48,17 @@ public class ArrayMethods {
     return magic;
   }
 
+  public static boolean isColumnMagic(int[][] ary) {
+    boolean magic = false;
+    for (int i=1; i<ary.length; i++) {
+      if (columnSum(ary, i)==columnSum(ary, i-1)) {
+        magic=true;
+      }
+      else {
+        magic=false;
+      }
+    }
+    return magic;
+  }
+
 }
