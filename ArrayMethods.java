@@ -20,6 +20,10 @@ public class ArrayMethods {
 
   public static int columnSum(int[][] ary, int x) {
     int sum=0;
+    int shortest=0;
+    for (int i=1; i<ary.length; i++) {
+      if (ary[i].length<ary[i-1].length) shortest=i;
+    }
     for (int i=0; i<ary.length; i++) {
         sum += ary[i][x];
       }
