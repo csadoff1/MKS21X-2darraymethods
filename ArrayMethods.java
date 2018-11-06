@@ -20,4 +20,10 @@ public class ArrayMethods {
     return sum;
   }
 
+  public static int[] allRowsSum(int[][] ary) {
+    int[] newAry = new int[ary.length];
+
+    return newAry;
+  }
+
 }
