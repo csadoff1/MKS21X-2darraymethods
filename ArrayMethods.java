@@ -1,7 +1,16 @@
 public class ArrayMethods {
+
+  public static int[] longest(int[][] ary) {
+    int longest=0;
+    for (int i=1; i<ary.length; i++) {
+      if (ary[i].length>ary[i-1].length) longest=i;
+    }
+  }
+
   public static int rowSum(int[][] ary, int x) {
     int sum=0;
     for (int i=0; i<ary[x].length; i++) {
+      if (ary[x].length<)
       sum += ary[x][i];
     }
     return sum;
