@@ -35,4 +35,10 @@ public class ArrayMethods {
     return newAry;
   }
 
+  public static boolean isRowMagic(int[][] ary) {
+    for (int i=1; i<ary.length; i++) {
+      if (rowSum(ary, i)==rowSum(ary, i-1)) {}
+    }
+  }
+
 }
