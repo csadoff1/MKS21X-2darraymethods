@@ -24,7 +24,11 @@ public class ArrayMethods {
   }
 
   public static int[] allColSum(int[][] ary) {
-    int[] newAry = new int[ary.length];
+    int longest=0;
+    for (int i=1; i<ary.length; i++) {
+      if (ary[i].length>ary[i-1].length) longest=i;
+    }
+    int[] newAry = new int[ary[longest].length];
     for (int i=0; i<newAry.length; i++) {
       newAry[i] = columnSum(ary, i);
     }
